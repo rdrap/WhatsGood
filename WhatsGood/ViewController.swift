@@ -13,11 +13,15 @@ import GooglePlacePicker
 class ViewController: UIViewController {
     
     var placesClient: GMSPlacesClient!
-    var hasGivenPermission = false
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var addressLabel: UILabel!
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        placesClient = GMSPlacesClient.shared()
+    }
     
     @IBAction func pickPlace(_ sender: UIButton) {
         let center = CLLocationCoordinate2D(latitude: 37.788204, longitude: -122.411937)
@@ -44,10 +48,6 @@ class ViewController: UIViewController {
         })
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        placesClient = GMSPlacesClient.shared()
-    }
     
     @IBAction func getCurrentPlace(_ sender: UIButton) {
         
