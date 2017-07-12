@@ -92,7 +92,7 @@
             <objects>
                 <navigationController title="What's Good?" automaticallyAdjustsScrollViewInsets="NO" id="fRX-TN-0P5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uXD-5b-GIK">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="uXD-5b-GIK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.84365085663654826" green="0.29175017193623232" blue="0.17697420799165445" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
