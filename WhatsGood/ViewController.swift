@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         placesClient = GMSPlacesClient.shared()
     }
-    
+
     @IBAction func pickPlace(_ sender: UIButton) {
         let center = CLLocationCoordinate2D(latitude: 37.788204, longitude: -122.411937)
         let northEast = CLLocationCoordinate2D(latitude: center.latitude + 0.001, longitude: center.longitude + 0.001)
@@ -71,4 +71,3 @@ class ViewController: UIViewController {
         })
     }
 }
-
